@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Esta es una página para cargar sus estudios médicos y calcular variables de salud."> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MirrorX</title>
+    <link rel="stylesheet" href="./styles.ccs">
+    <style>
+
+        html {box-sizing: border-box;}
+        h1,h2{
+            font-family:'Lucida Sans', 'Lucida Sans Regular',    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: whitesmoke;
+            background-color: rgb(95, 235, 95);
+            margin: 0;
+            }
+        nav {display: flex;
+             justify-content: space-around;
+             align-items: center;
+             width: 100%;
+             background-color: rgb(190, 224, 190);
+             padding: 5px 0;}
+
+        nav a{color:black;
+            font-weight: 900;
+            text-decoration: none;
+            border-radius: 8px;
+            background-color:rgb(94, 221, 94);
+            box-sizing:inherit;
+            padding: 8px 10px;
+            margin: 0 5px;
+            display: inline-flex;
+            justify-content: center;
+            align-items:center;
+            text-align: center;
+            width:18%; 
+            }
+         nav a:hover {color: white;
+                      background-color:blue;}
+         p {text-align:center ;}
+        .tabla {  color: black;
+                  text-align: center;
+                  background-color: rgb(97, 163, 163);
+                  border-radius:black;
+                  border-radius: 8px;}
+        .imagen {border: 3px solid gray ;}
+        .paracentrar {text-align:center;}
+        footer {text-align:center;}
+                 
+    </style>
+</head>
+<body>
+    <header>
+    <h1> MirrorX </h1>
+    <h2>Un lugar donde guardar tu historial clínico gratuito</h2>
+    <nav>
+        <a href="./registro.html" target="_blank">Registro</a>
+        <a href="./acercade.html" target="_blank">Acerca de...</a>
+        <a href="./busqueda.html" target="_blank">Búsqueda</a>
+        <a href="./preguntasfrecuentes" target="_blank">Preguntas Frecuentes</a>
+    </nav>
+    </header>
+    <p> Ingrese sus valores de laboratorio, datos antropométricos y hábitos para conocer su <strong>estado de salud</strong>.</p>
+    <div class="paracentrar">
+    <img class="imagen" src="./media/consultoriomedico.jpeg" width="500" alt="Imagen en consultorio">
+    </div>
+    <div class="tabla">
+    <table>
+        <thead>
+            <tr><b>Servicios: </b></tr>
+            <br><br>
+        </thead>
+        <tbody>
+            <tr>ºLaboratorio</tr>
+            <td>ºCálculo de variables: </td>
+            <td><button onclick="creatinina()">Clearence de Creatinina</button></td>
+            <td><button onclick="mostrar_creatinina()">SHOW</button></td>
+            <td>-Riesgo Cardiovascular Global</td>
+            <td>-Índice de Masa Corporal</td>
+        </tbody>
+    </table>
+    </div>
+    <footer> Hecho con amor por Fede</footer>
+    <script src="./calculadora.js"></script>
+   
+
+</body>
+
+</html>
+
