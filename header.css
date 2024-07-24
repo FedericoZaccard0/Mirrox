@@ -1,0 +1,68 @@
+/* Estilos para el header */
+
+header {
+    background-color: #343a40;
+    /* Color de fondo oscuro */
+    padding: 10px 0;
+    /* Espaciado interno arriba y abajo */
+    color: #ffffff;
+    /* Color del texto (blanco) */
+    text-align: center;
+    /* Centrar texto */
+
+}
+
+header h1 {
+    margin: 0;
+    /* Eliminar márgenes predeterminados */
+    font-size: 2em;
+    /* Tamaño del texto del título */
+    color: #419aff;
+}
+
+header nav {
+    margin-top: 10px;
+    /* Espacio superior para los enlaces de navegación */
+}
+
+header nav a {
+    color: #ffffff;
+    /* Color del texto de los enlaces (blanco) */
+    text-decoration: none;
+    /* Sin subrayado */
+    text-transform: uppercase;
+    /* Convertir texto en mayúsculas */
+    margin: 0 10px;
+    /* Márgenes horizontal entre enlaces */
+    padding: 5px 10px;
+    /* Relleno interno de los enlaces */
+    border-radius: 4px;
+    /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+    /* Transición suave de color de fondo */
+}
+
+header nav a:hover {
+    background-color: #555d66;
+    /* Color de fondo cuando se pasa el mouse */
+}
+
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav {
+        margin-top: 5px;
+    }
+
+    header nav a {
+        margin: 0 5px;
+        padding: 5px 5px;
+        display: block; 
+    }
+
+}
+
+
