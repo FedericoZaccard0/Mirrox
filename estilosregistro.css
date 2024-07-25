@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+body::before {
+    content: ""; /* Necesario para crear el pseudo-elemento */
+    position: fixed; /* Fija el pseudo-elemento en la ventana del navegador */
+    top: 0; /* Coloca el borde superior del pseudo-elemento en la parte superior de la ventana del navegador */
+    left: 0; /* Coloca el borde izquierdo del pseudo-elemento en el borde izquierdo de la ventana del navegador */
+    width: 100%; /* Establece el ancho del pseudo-elemento para que ocupe el 100% del ancho de la ventana del navegador */
+    height: 100%; /* Establece la altura del pseudo-elemento para que ocupe el 100% de la altura de la ventana del navegador */
+    background-image: url('media/fondo.jpg'); /* Define una imagen de fondo para el pseudo-elemento */
+    background-position: center; /* Centra la imagen de fondo dentro del pseudo-elemento */
+    background-repeat: repeat; /* Hace que la imagen de fondo se repita horizontal y verticalmente para llenar todo el área del pseudo-elemento */
+    opacity: 0.5; /* Ajusta la opacidad del pseudo-elemento, haciéndolo 50% transparente */
+    z-index: -1; /* Coloca el pseudo-elemento detrás del contenido principal del body */
+}
+
+
+
+.contenedor {
+    background: rgba(158, 192, 255, 0.8);
+    padding: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #7100b3;
+}
+
+h2 {
+    text-align: center;
+    color: #656666;
+}
+
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+
+
+
+.radiobutton,
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    /* Fondo blanco */
+    color: #333;
+    /* Color de texto */
+}
+
+
+.radiobutton {
+    display: flex;
+    align-items: center;
+    /* Alinea verticalmente los elementos */
+}
+
+.radiobutton label {
+    margin-right: 50px;
+    /* Espacio entre cada opción */
+}
+
+.radiobutton label input[type="radio"] {
+    margin-right: 5px;
+    /* Espacio entre el input y el texto */
+}
+
+
+
+
+
+
+
+
+
+/* Estilo de botones*/
+
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #109e0b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #065204;
+}
+
+
+input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f72626;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="reset"]:hover,
+button:hover {
+    background-color: #ac2424;
+}
+
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: rgba(0, 123, 255, 0.1);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
